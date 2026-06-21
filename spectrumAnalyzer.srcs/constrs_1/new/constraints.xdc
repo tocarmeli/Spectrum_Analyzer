@@ -1,0 +1,7 @@
+set_property PACKAGE_PIN R2 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property PACKAGE_PIN H14 [get_ports rst]
+set_property IOSTANDARD LVCMOS33 [get_ports rst]
+set_property PACKAGE_PIN R12 [get_ports tx]
+set_property IOSTANDARD LVCMOS33 [get_ports tx]
+create_clock -period 10.000 -name sys_clk -waveform {0.000 5.000} [get_ports clk]
